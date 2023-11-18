@@ -26,6 +26,9 @@
   },
   "color": "#F4FFDE",
   "icon": "bicycle",
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
   "unpublishedCustomJSLibs": [],
   "publishedCustomJSLibs": [],
   "evaluationVersion": 2,

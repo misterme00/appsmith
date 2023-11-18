@@ -5,7 +5,7 @@
     "displayName": "Image",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.69b0f0dd810281fbd6e34fc2c3f39344.svg",
     "topRow": 0,
-    "bottomRow": 12,
+    "bottomRow": 19,
     "parentRowSpace": 10,
     "type": "IMAGE_WIDGET",
     "hideCard": false,
@@ -14,7 +14,7 @@
     "parentColumnSpace": 19.984375,
     "dynamicTriggerPathList": [],
     "imageShape": "RECTANGLE",
-    "leftColumn": 38,
+    "leftColumn": 52,
     "dynamicBindingPathList": [
         {"key": "borderRadius"},
         {"key": "defaultImage"}
@@ -24,7 +24,7 @@
     "key": "hm5gjoily0",
     "image": "",
     "isDeprecated": false,
-    "rightColumn": 50,
+    "rightColumn": 64,
     "objectFit": "cover",
     "widgetId": "1vqzgix6ad",
     "isVisible": true,

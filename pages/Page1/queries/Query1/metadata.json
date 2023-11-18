@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "basic",
+    "name": "Query1",
     "datasource": {
       "name": "mongoAtlas",
       "pluginId": "mongo-plugin",
@@ -29,7 +29,7 @@
           }
         },
         "body": {
-          "data": "{\n  \"find\": \"bb\",\n  \"filter\": {\n   \n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
+          "data": ""
         },
         "collection": {
           "data": "bb"
@@ -59,25 +59,31 @@
           }
         },
         "find": {
-          "query": {
-            "data": "{}"
-          },
-          "limit": {
+          "skip": {
             "data": ""
+          },
+          "query": {
+            "data": "{ \n\n\t\"listing.id\": \"1017836222834831912\"}\n}\n"
           },
           "sort": {
             "data": ""
           },
-          "skip": {
+          "limit": {
             "data": ""
           },
           "projection": {
-            "data": "{ \"id\": \"$listing.id\",\n  \"name\": \"$listing.name\",\n                    \"isVerified\": \"$listing.primaryHostPassport.isVerified\",\n                    \"title\": \"$listing.title\",\n                    \"amount\": \"$pricingQuote.rate.amount\",\n                    \"photos\": \"$listing.contextualPictures.picture\"\n                   }"
+            "data": " {\n     \"id\": \"$listing.id\",\n  \"name\": \"$listing.name\",\n   \"isVerified\": \"$listing.primaryHostPassport.isVerified\"\n  }"
           }
         },
         "insert": {
           "documents": {
             "data": ""
+          }
+        },
+        "misc": {
+          "formToNativeQuery": {
+            "data": "{\n  \"find\": \"bb\",\n  \"filter\": { \n\n\t\"listing.id\": \"1017836222834831912\"}\n}\n,\n  \"limit\": 10,\n  \"batchSize\": 10\n}\n",
+            "status": "SUCCESS"
           }
         },
         "smartSubstitution": {
@@ -96,7 +102,7 @@
         }
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -105,10 +111,9 @@
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": [],
-    "createdAt": "2023-11-18T14:39:14Z"
+    "userPermissions": []
   },
-  "id": "Page1_basic",
+  "id": "Page1_Query1",
   "deleted": false,
-  "gitSyncId": "6558caa2b66f266720e66a59_6558cc92797242061f860349"
+  "gitSyncId": "6558caa2b66f266720e66a59_65590f964dc7760581104037"
 }
