@@ -3,7 +3,7 @@
     "borderColor": "#E0DEDE",
     "isVisibleDownload": true,
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.e6911f8bb94dc6c4a102a74740c41763.svg",
-    "topRow": 13,
+    "topRow": 36,
     "isSortable": true,
     "type": "TABLE_WIDGET_V2",
     "inlineEditingSaveOption": "ROW_LEVEL",
@@ -22,7 +22,7 @@
         {"key": "tableData"}
     ],
     "needsHeightForContent": true,
-    "leftColumn": 2,
+    "leftColumn": 1,
     "delimiter": ",",
     "defaultSelectedRowIndex": 0,
     "flexVerticalAlignment": "start",
@@ -80,7 +80,7 @@
         {"key": "primaryColumns.photos.onClick"}
     ],
     "displayName": "Table",
-    "bottomRow": 79,
+    "bottomRow": 102,
     "columnWidthMap": {"photos": 468},
     "parentRowSpace": 10,
     "hideCard": false,
@@ -276,8 +276,8 @@
             "verticalAlignment": "CENTER"
         },
         "photos": {
-            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"photos\"] + '[0]'))}}",
-            "onClick": "{{}}",
+            "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"photos\"]))}}",
+            "onClick": "",
             "isEditable": false,
             "notation": "standard",
             "alias": "photos",
@@ -312,7 +312,7 @@
     "key": "l5vpopyhc8",
     "canFreezeColumn": true,
     "isDeprecated": false,
-    "rightColumn": 64,
+    "rightColumn": 63,
     "textSize": "0.875rem",
     "widgetId": "tx4pw483gt",
     "minWidth": 450,
